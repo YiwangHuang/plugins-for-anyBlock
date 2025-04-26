@@ -1,0 +1,34 @@
+/* 自定义CSS样式 */
+.custom-class {
+  color: #3eaf7c;
+  font-weight: bold;
+}
+
+/* 添加一些全局变量 */
+:root {
+  --custom-primary-color: #3eaf7c;
+  --custom-secondary-color: #4abf8a;
+  --custom-text-color: #2c3e50;
+}
+
+/* 修改一些基础样式 */
+.navbar .site-name {
+  color: var(--custom-primary-color);
+}
+
+h3 {
+  color: #3498db; /* 蓝色，你可以换成任何你喜欢的颜色值 */
+}
+
+/* 自定义组件样式 */
+.homepage .hero h1 {
+  color: var(--custom-primary-color);
+  font-size: 3rem;
+}
+
+/* 响应式样式 */
+@media (max-width: 719px) {
+  .homepage .hero h1 {
+    font-size: 2rem;
+  }
+} 

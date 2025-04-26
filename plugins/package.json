@@ -1,0 +1,9 @@
+{
+  "name": "plugins",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "cd injectCSS && pnpm build",
+    "clean": "rm -rf node_modules && cd injectCSS && pnpm clean"
+  }
+} 

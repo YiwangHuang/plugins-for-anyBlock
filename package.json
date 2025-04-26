@@ -1,0 +1,38 @@
+{
+  "name": "vuepress-blog-monorepo",
+  "private": true,
+  "description": "VuePress blog monorepo project",
+  "version": "2.0.0",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.8.0",
+  "workspaces": [
+    "packages/*",
+    "docs",
+    "plugins/*"
+  ],
+  "scripts": {
+    "docs:build": "pnpm -F docs build",
+    "docs:dev": "pnpm -F docs dev",
+    "docs:clean-dev": "pnpm -F docs clean-dev",
+    "docs:update-package": "pnpm dlx vp-update",
+    "build:plugins": "turbo run build --filter=./plugins/*",
+    "clean:plugins": "turbo run clean --filter=./plugins/*",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.21",
+    "sass-embedded": "^1.86.3",
+    "turbo": "^2.2.7",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.21",
+    "vuepress-theme-hope": "2.0.0-rc.82"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
