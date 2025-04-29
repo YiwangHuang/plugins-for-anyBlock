@@ -1,7 +1,7 @@
 {
-    "name": "inject-css",
+    "name": "markdown-it-anyBlock",
     "version": "0.0.1",
-    "description": "VuePress plugin to inject CSS",
+    "description": "Markdown-it plugin to convert any block to html",
     "type": "module",
     "main": "lib/node/index.js",
     "types": "lib/node/index.d.ts",
@@ -14,14 +14,9 @@
         "clean": "rm -rf lib node_modules && rm -rf tsconfig.tsbuildinfo"
     },
     "devDependencies": {
-        "@types/webpack-env": "^1.18.4",
-        "rollup": "^3.29.4",
-        "rollup-plugin-postcss": "^4.0.2",
-        "tsconfig-vuepress": "^5.2.1",
         "typescript": "^5.4.2",
-        "vite": "~6.2.6",
-        "vuepress": "^2.0.0-rc.21",
-        "jsdom": "^26.1.0"
+        "markdown-it": "^14.1.0",
+        "markdown-it-container": "^4.0.0"
     },
     "peerDependencies": {
         "vuepress": "^2.0.0-rc.21"
