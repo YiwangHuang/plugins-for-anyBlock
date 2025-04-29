@@ -28,6 +28,7 @@
     },
     "dependencies": {
         "autoprefixer": "^10.4.21",
-        "postcss": "^8.5.3"
+        "postcss": "^8.5.3",
+        "markdown-it-anyBlock": "workspace:*"
     }
 }

@@ -48,8 +48,9 @@ import MarkdownItConstructor from "markdown-it-container";
 
 // 3. markdown-it-anyblock 插件
 // import { ABConvertManager } from "./index"
-import { ABConvertManager } from "../ABConverter/ABConvertManager"
-import { ABCSetting, ABReg } from "../ABConverter/ABReg"
+import { ABConvertManager } from "../ABConverter/ABConvertManager.js"
+import { ABCSetting, ABReg } from "../ABConverter/ABReg.js"
+// 修改导入名以符合vite的构建要求
 // 加载所有转换器 (都是可选的)
 // (当然，如果A转换器依赖B转换器，那么你导入A必然导入B)
 import "../ABConverter/converter/abc_text"

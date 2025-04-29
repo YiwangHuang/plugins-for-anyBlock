@@ -1,6 +1,7 @@
 // import { getFullLocaleConfig } from '@vuepress/helper'
 import type { Plugin } from 'vuepress/core'
 import { getDirname, path } from 'vuepress/utils'
+import ab_mdit from 'markdown-it-anyBlock'
 
 const __dirname = import.meta.dirname||getDirname(import.meta.url)
 

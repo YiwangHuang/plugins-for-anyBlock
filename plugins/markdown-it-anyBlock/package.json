@@ -3,18 +3,20 @@
     "version": "0.0.1",
     "description": "Markdown-it plugin to convert any block to html",
     "type": "module",
-    "main": "lib/node/index.js",
-    "types": "lib/node/index.d.ts",
+    "main": "dist/index_mdit.cjs",
+    "module": "dist/index_mdit.js",
+    "types": "dist/index_mdit.d.ts",
     "files": [
-        "lib/**"
+        "dist/**"
     ],
     "scripts": {
-        "build": "tsc -b tsconfig.json && pnpm build:css",
-        "build:css": "rollup -c",
-        "clean": "rm -rf lib node_modules && rm -rf tsconfig.tsbuildinfo"
+        "build": "vite build",
+        "clean": "rm -rf dist node_modules"
     },
     "devDependencies": {
-        "typescript": "^5.4.2",
+        "vite": "^5.0.0",
+        "typescript": "^5.0.0",
+        "vite-plugin-dts": "^3.7.0",
         "markdown-it": "^14.1.0",
         "markdown-it-container": "^4.0.0"
     },
