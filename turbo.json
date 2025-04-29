@@ -4,7 +4,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["lib/**", ".vuepress/dist/**"]
+      "outputs": ["lib/**", ".vuepress/dist/**", "dist/**"]
     },
     "build:css": {
       "outputs": ["lib/**"]
