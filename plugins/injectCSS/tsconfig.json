@@ -2,7 +2,7 @@
   "extends": "tsconfig-vuepress/base.json",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "lib": ["DOM", "ES2022"],
+    "lib": ["DOM", "ES2022","DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmitOnError": true,
