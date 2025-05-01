@@ -4,7 +4,11 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["DOM", "ES2022","DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Bundler",// 模块解析策略"Bundler"
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": false,
+    "allowUnreachableCode": true,
     "noEmitOnError": true,
     "noImplicitAny": false,
     "skipLibCheck": true,

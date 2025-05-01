@@ -187,6 +187,7 @@ function data2mehrmaidText(
   // mehrmaid较于mermaid的补充1：映射表。先将内容全部映射成数字（TODO 需要处理重名）
   const mehrmaidMap = []
   for (let i=0; i<list_itemInfo.length; i++) {
+    // @ts-ignore
     mehrmaidMap[i] = list_itemInfo[i].content
     list_itemInfo[i].content = i.toString()
   }
