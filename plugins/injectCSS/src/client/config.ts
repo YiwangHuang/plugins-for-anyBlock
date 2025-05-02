@@ -1,3 +1,3 @@
-import './styles/style.css'
+import './styles/styles.css'
 
 export default {}

@@ -12,8 +12,7 @@
     "clean": "rm -rf .vuepress/.temp .vuepress/.cache .vuepress/dist node_modules"
   },
   "dependencies": {
-    "inject-css": "workspace:*",
-    "markdown-it-anyBlock": "workspace:*"
+    "vuepress-plugin-markdown-anyblock": "workspace:*"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.21",

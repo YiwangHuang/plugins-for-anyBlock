@@ -4,11 +4,11 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["DOM", "ES2022","DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",// 模块解析策略"Bundler"
-    "strictFunctionTypes": false,
-    "strictPropertyInitialization": false,
-    "noUnusedLocals": false,
-    "allowUnreachableCode": true,
+    "moduleResolution": "Bundler", // 模块解析策略"Bundler"
+    "strictFunctionTypes": false, /* 关闭函数参数类型的逆变检查，允许事件回调函数等场景中更灵活的类型兼容性 */
+    "strictPropertyInitialization": false, /* 关闭类属性必须在构造函数中初始化的检查，适用于属性可能在运行时动态初始化的情况 */
+    "noUnusedLocals": false, /* 不检查未使用的局部变量，在开发阶段避免过多警告 */
+    "allowUnreachableCode": true, /* 允许编译器接受不可达代码，用于条件编译或调试目的 */
     "noEmitOnError": true,
     "noImplicitAny": false,
     "skipLibCheck": true,

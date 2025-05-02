@@ -29,12 +29,9 @@ importers:
 
   docs:
     dependencies:
-      inject-css:
+      vuepress-plugin-markdown-anyblock:
         specifier: workspace:*
         version: link:../plugins/injectCSS
-      markdown-it-anyBlock:
-        specifier: workspace:*
-        version: link:../plugins/markdown-it-anyBlock
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.21
@@ -76,18 +73,12 @@ importers:
 
   plugins/injectCSS:
     dependencies:
-      autoprefixer:
-        specifier: ^10.4.21
-        version: 10.4.21(postcss@8.5.3)
       jsdom:
         specifier: ^26.1.0
         version: 26.1.0
       markdown-it-anyBlock:
         specifier: workspace:*
         version: link:../markdown-it-anyBlock
-      postcss:
-        specifier: ^8.5.3
-        version: 8.5.3
     devDependencies:
       '@types/webpack-env':
         specifier: ^1.18.4

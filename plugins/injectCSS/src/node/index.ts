@@ -28,9 +28,9 @@ global.HTMLUListElement = dom.window.HTMLUListElement
 global.HTMLScriptElement = dom.window.HTMLScriptElement
 dom.window.scrollTo = ()=>{} // @warn 若缺少该行，编译警告：Error: Not implemented: window.scrollTo*/
 
-export const injectCSSPlugin = (): Plugin => {
+export const markdownAnyblockPlugin = (): Plugin => {
     return {
-        name: 'inject-css',
+        name: 'vuepress-plugin-markdown-anyblock',
         clientConfigFile: path.resolve(__dirname, '../client/config.js'),
         extendsMarkdown: (md) => {
             md.use(ab_mdit)

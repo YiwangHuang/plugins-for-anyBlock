@@ -14,9 +14,9 @@ const __dirname = dirname(__filename)
  * @param {string} outputFileName - 输出文件名
  */
 export const buildCssBundle = (
-  cssFilePath = 'client/styles/style.css',
+  cssFilePath = 'client/styles/styles.css',
   outputDir = 'client/styles',
-  outputFileName = 'style.css'
+  outputFileName = 'styles.css'
 ) => ({
   input: resolve(__dirname, 'src', cssFilePath),
   output: {
@@ -36,5 +36,5 @@ export const buildCssBundle = (
 
 // 导出配置
 export default defineConfig([
-  buildCssBundle('client/styles/style.css', 'client/styles', 'style.css')
+  buildCssBundle('client/styles/styles.css', 'client/styles', 'styles.css')
 ]) 
