@@ -12,13 +12,15 @@
     "clean": "rm -rf .vuepress/.temp .vuepress/.cache .vuepress/dist node_modules"
   },
   "dependencies": {
-    "inject-css": "workspace:*"
+    "inject-css": "workspace:*",
+    "markdown-it-anyBlock": "workspace:*"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.21",
     "sass-embedded": "^1.86.3",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.21",
-    "vuepress-theme-hope": "2.0.0-rc.82"
+    "vuepress-theme-hope": "2.0.0-rc.82",
+    "jsdom": "^26.1.0"
   }
 } 

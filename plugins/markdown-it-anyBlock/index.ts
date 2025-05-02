@@ -61,9 +61,9 @@ import "../ABConverter/converter/abc_dir_tree"
 import "../ABConverter/converter/abc_deco"
 import "../ABConverter/converter/abc_ex"
 import "../ABConverter/converter/abc_mdit_container"
-import "../ABConverter/converter/abc_plantuml" // 可选建议：
-import "../ABConverter/converter/abc_mermaid"  // 可选建议：7.1MB
-import "../ABConverter/converter/abc_markmap"  // 可选建议：1.3MB
+// import "../ABConverter/converter/abc_plantuml" // 可选建议：
+// import "../ABConverter/converter/abc_mermaid"  // 可选建议：7.1MB
+// import "../ABConverter/converter/abc_markmap"  // 可选建议：1.3MB
 
 interface Options {
   multiline: boolean;

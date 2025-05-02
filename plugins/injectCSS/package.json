@@ -20,8 +20,7 @@
         "tsconfig-vuepress": "^5.2.1",
         "typescript": "^5.4.2",
         "vite": "~6.2.6",
-        "vuepress": "^2.0.0-rc.21",
-        "jsdom": "^26.1.0"
+        "vuepress": "^2.0.0-rc.21"
     },
     "peerDependencies": {
         "vuepress": "^2.0.0-rc.21"
@@ -29,6 +28,7 @@
     "dependencies": {
         "autoprefixer": "^10.4.21",
         "postcss": "^8.5.3",
+        "jsdom": "^26.1.0",
         "markdown-it-anyBlock": "workspace:*"
     }
 }
